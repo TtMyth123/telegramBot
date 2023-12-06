@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f9b3e92-5da0-4eef-84e0-7693cf91df51" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/demo/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FuncType.go" beforeDir="false" afterPath="$PROJECT_DIR$/FuncType.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/demo/conf/app.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegramBot.go" beforeDir="false" afterPath="$PROJECT_DIR$/telegramBot.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegramBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/telegramBot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type.go" beforeDir="false" afterPath="$PROJECT_DIR$/type.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +24,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../Go/V1_18" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../Tool/SDK/Go/go1.18" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -54,7 +47,8 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/work/go/WorkSpace/src/ttmyth123/telegramBot/demo"
+    "last_opened_file_path": "D:/work/go/WorkSpace/src/ttmyth123/telegramBot/demo",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -88,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658735993780</updated>
       <workItem from="1658735995201" duration="2691000" />
+      <workItem from="1701857341555" duration="955000" />
     </task>
     <servers />
   </component>

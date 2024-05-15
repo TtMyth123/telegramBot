@@ -3,13 +3,13 @@ package main
 import (
 	"fmt"
 	"github.com/TtMyth123/telegramBot"
+	"github.com/astaxie/beego"
 	botClient "github.com/zelenin/grabot/client"
 	"net/http"
 	"net/url"
-	"strconv"
-
-	"github.com/astaxie/beego"
 )
+
+var mBot *telegramBot.TelegramBot
 
 func main() {
 
@@ -32,6 +32,7 @@ func main() {
 	if e != nil {
 		fmt.Println(e)
 	}
+	mBot = aBot
 
 	aBot.MessageFunc = MessageFunc
 	aBot.MCallbackQueryFunc = CallbackQueryFunc
@@ -45,7 +46,7 @@ func MessageFunc(aMessage botClient.Message) error {
 	return nil
 }
 
-func CallbackQueryFunc(methodName string, data map[string]interface{}) (botClient.AnswerCallbackQueryRequest, error) {
+func CallbackQueryFunc(aCallbackQuery botClient.CallbackQuery, data map[string]interface{}) (botClient.AnswerCallbackQueryRequest, error) {
 	ss := ""
 	for k, v := range data {
 		ss += fmt.Sprintf("%s:%v\n", k, v)
@@ -54,80 +55,8 @@ func CallbackQueryFunc(methodName string, data map[string]interface{}) (botClien
 	req := botClient.AnswerCallbackQueryRequest{}
 	ShowAlert := false
 	req.ShowAlert = &ShowAlert
-	//req.Text = &str
-	aMessage := botClient.Message{}
-	Text := "aaa\n\naa"
-	aMessage.Text = &Text
-	aMessage.Chat.Id = GetInterface2Int64(data[telegramBot.CallbackQueryKey_ChatId], 0)
+
+	mBot.SendMessage(aCallbackQuery.Message.Chat.Id, 0, "aaaa", nil)
 
 	return req, nil
-}
-
-func GetInterface2Int64(mp interface{}, k int64) int64 {
-	if r1, ok := mp.(int64); ok {
-		return r1
-	}
-	if r1, ok := mp.(int); ok {
-		return int64(r1)
-	}
-	if r1, ok := mp.(int32); ok {
-		return int64(r1)
-	}
-	if r1, ok := mp.(float64); ok {
-		return int64(r1)
-	}
-
-	if r1, ok := mp.(uint8); ok {
-		return int64(r1)
-	}
-	if r1, ok := mp.(uint16); ok {
-		return int64(r1)
-	}
-	if r1, ok := mp.(uint32); ok {
-		return int64(r1)
-	}
-	if r1, ok := mp.(uint64); ok {
-		return int64(r1)
-	}
-	if r1, ok := mp.(int8); ok {
-		return int64(r1)
-	}
-	if r1, ok := mp.(int16); ok {
-		return int64(r1)
-	}
-	if r1, ok := mp.(uint); ok {
-		return int64(r1)
-	}
-
-	if r1, ok := mp.(string); ok {
-		r, e := strconv.ParseInt(r1, 10, 64)
-		if e == nil {
-			return int64(r)
-		} else {
-			return k
-		}
-	}
-
-	v := GetInterface2Str(mp, fmt.Sprint(k))
-	r, e := strconv.ParseInt(v, 10, 64)
-	if e == nil {
-		return r
-	} else {
-		return k
-	}
-
-	return k
-}
-
-func GetInterface2Str(mp interface{}, k string) string {
-	r := k
-	if mp != nil {
-		if r1, ok := mp.(string); ok {
-			return r1
-		} else {
-			return fmt.Sprint(mp)
-		}
-	}
-
-	return r
 }

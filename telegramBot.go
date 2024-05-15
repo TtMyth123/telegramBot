@@ -77,7 +77,7 @@ func (this *TelegramBot) callbackQuery(aCallbackQuery botClient.CallbackQuery) e
 		mpData[CallbackQueryKey_Data] = callbackData
 		mpData[CallbackQueryKey_MessageId] = MessageId
 
-		req, e := this.MCallbackQueryFunc("", mpData)
+		req, e := this.MCallbackQueryFunc(aCallbackQuery, mpData)
 		if e != nil {
 			ShowAlert := true
 			resultText := e.Error()

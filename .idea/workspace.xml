@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9b3e92-5da0-4eef-84e0-7693cf91df51" name="Changes" comment="init">
+    <list default="true" id="6f9b3e92-5da0-4eef-84e0-7693cf91df51" name="Changes" comment="CallbackQueryFunc 调整">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncType.go" beforeDir="false" afterPath="$PROJECT_DIR$/FuncType.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/demo/conf/app.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telegramBot.go" beforeDir="false" afterPath="$PROJECT_DIR$/telegramBot.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +105,7 @@
       <workItem from="1702820111089" duration="1039000" />
       <workItem from="1702886357834" duration="5880000" />
       <workItem from="1715697277947" duration="804000" />
-      <workItem from="1715763725143" duration="1112000" />
+      <workItem from="1715763725143" duration="2009000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1701867890485</created>
@@ -116,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701867890485</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CallbackQueryFunc 调整">
+      <created>1715764964102</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715764964102</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +140,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="CallbackQueryFunc 调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="CallbackQueryFunc 调整" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

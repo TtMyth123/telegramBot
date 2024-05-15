@@ -77,21 +77,31 @@ func (this *TelegramBot) callbackQuery(aCallbackQuery botClient.CallbackQuery) e
 		mpData[CallbackQueryKey_Data] = callbackData
 		mpData[CallbackQueryKey_MessageId] = MessageId
 
-		resultText, e := this.MCallbackQueryFunc("", mpData)
+		req, e := this.MCallbackQueryFunc("", mpData)
 		if e != nil {
-			resultText = e.Error()
+			ShowAlert := true
+			resultText := e.Error()
+			req.Text = &resultText
+			req.ShowAlert = &ShowAlert
+			req.CallbackQueryId = aCallbackQuery.Id
+		}
+		if req.CallbackQueryId == "" {
+			req.CallbackQueryId = aCallbackQuery.Id
 		}
 
-		ShowAlert := true
-		req := &botClient.AnswerCallbackQueryRequest{}
-		req.Text = &resultText
-		req.ShowAlert = &ShowAlert
-		req.CallbackQueryId = aCallbackQuery.Id
-		_, e = this.Client.AnswerCallbackQuery(req)
+		//ShowAlert := true
+		//req := &botClient.AnswerCallbackQueryRequest{}
+		//req.Text = &resultText
+		//req.ShowAlert = &ShowAlert
+		//req.CallbackQueryId = aCallbackQuery.Id
+		_, e = this.Client.AnswerCallbackQuery(&req)
 		if e != nil {
-			resultText = e.Error()
+			ShowAlert := true
+			resultText := e.Error()
 			req.Text = &resultText
-			_, e := this.Client.AnswerCallbackQuery(req)
+			req.ShowAlert = &ShowAlert
+			req.CallbackQueryId = aCallbackQuery.Id
+			_, e := this.Client.AnswerCallbackQuery(&req)
 			if e != nil {
 				log.Println(e)
 				return e

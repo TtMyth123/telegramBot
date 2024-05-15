@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6f9b3e92-5da0-4eef-84e0-7693cf91df51" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FuncType.go" beforeDir="false" afterPath="$PROJECT_DIR$/FuncType.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/demo/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegramBot.go" beforeDir="false" afterPath="$PROJECT_DIR$/telegramBot.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +28,16 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../Tool/SDK/Go/go1.18" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../../../Tool/SDK/Go/go1.21.5" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$/../../../../GoPathN" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,8 +57,12 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "false",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "D:/work/go/WorkSpace/src/ttmyth123/telegramBot/demo",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "go.sdk",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -82,8 +97,26 @@
       <option name="presentableId" value="Default" />
       <updated>1658735993780</updated>
       <workItem from="1658735995201" duration="2691000" />
-      <workItem from="1701857341555" duration="955000" />
+      <workItem from="1701857341555" duration="1561000" />
+      <workItem from="1702019452180" duration="4042000" />
+      <workItem from="1702037348558" duration="849000" />
+      <workItem from="1702039000735" duration="2483000" />
+      <workItem from="1702714056898" duration="2478000" />
+      <workItem from="1702810264742" duration="1196000" />
+      <workItem from="1702820013742" duration="77000" />
+      <workItem from="1702820111089" duration="1039000" />
+      <workItem from="1702886357834" duration="5880000" />
+      <workItem from="1715697277947" duration="804000" />
+      <workItem from="1715763725143" duration="1112000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1701867890485</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701867890485</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,20 +140,8 @@
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/demo/main.go</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/demo/main.go</url>
-          <line>40</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
